@@ -15,8 +15,8 @@ export const Result = ({ price, won, guesses, number }) => {
         if (guess === null) return
         const diff = calculatePercentageDifference(price, guess)
         if (diff < 5) return '🟢'
-        if (diff > 25) return price > guess ? '⬆️🔴' : '⬇️🔴'
-        return price > guess ? '⬆️🟡' : '⬇️🟡'
+        if (diff > 25) return Number(price) > Number(guess) ? '⬆️🔴' : '⬇️🔴'
+        return Number(price) > Number(guess) ? '⬆️🟡' : '⬇️🟡'
       })
       .filter(Boolean)
       .join('')

@@ -18,7 +18,7 @@ export const EvaluatedGuess = ({ price, guess }) => {
   }
 
   const distance = diff > 25 ? styles.Wrong : styles.Almost
-  const direction = price > guess ? '⬆️' : '⬇️'
+  const direction = Number(price) > Number(guess) ? '⬆️' : '⬇️'
 
   return (
     <div class={`${styles.Guess} ${distance}`}>
