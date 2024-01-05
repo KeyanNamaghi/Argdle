@@ -2,7 +2,9 @@
 
 Was mainly just a way to checkout Solid.js
 
-## What is it?
+![](./Screenshot.png)
+
+## What is it?
 
 A wordle like game but for guessing the price of Argos items
 
