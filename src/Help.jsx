@@ -19,7 +19,7 @@ export const Help = ({ handleClose }) => {
             <EvaluatedGuess price={10} guess={10} />
             <h3>A new Argdle is available every day!</h3>
             <p>
-              Special thanks all the dles out there but <a href="https://costcodle.com/">COSTCODLE</a> in particular!
+              Special thanks to all the dles but <a href="https://costcodle.com/">COSTCODLE</a> in particular!
             </p>
             <p>
               Created by <a href="https://www.keyan.dev/me">Keyan</a>
