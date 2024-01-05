@@ -69,6 +69,7 @@ const App = () => {
             }}>
             <input
               required
+              inputmode="decimal"
               name="guess"
               autocomplete="off"
               autofocus={true}
