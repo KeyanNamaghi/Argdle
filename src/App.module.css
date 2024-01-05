@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap');
+
+.App {
+  text-align: center;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  font-family: Barlow, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Container {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  padding: 2rem;
+  background-color: white;
+  overflow: scroll;
+}
+
+.Icons {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  > svg {
+    padding: 0 10px;
+  }
+}
+
+.Heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.Tile {
+  color: #d71f15;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+.Guess {
+  height: 2.5rem;
+  width: 100%;
+  background-color: #f2f2f2;
+  margin: 5px 0;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: 600;
+  display: grid;
+  place-items: center;
+}
+
+.Wrong {
+  background-color: #d71f15;
+  color: white;
+}
+
+.Almost {
+  background-color: #ffd900;
+  color: black;
+}
+
+.Correct {
+  background-color: #008844;
+  color: white;
+}
+
+.Form {
+  display: flex;
+  padding: 1rem 0;
+  font-size: 16px;
+  height: 2.5rem;
+
+  input {
+    padding: 5px 15px;
+    flex: auto;
+    outline: none;
+    border: 1px solid #375ea9;
+    border-radius: 10px 0 0 10px;
+  }
+
+  input:focus {
+    outline: none;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #4d90fe;
+  }
+
+  button {
+    background-color: #008844;
+    color: white;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  button:active,
+  button:hover,
+  button:focus {
+    outline: none;
+    background-color: #006e3e;
+  }
+}
+
+.Share {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin: auto;
+  background-color: #008844;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.Share:active,
+.Share:hover,
+.Share:focus {
+  outline: none;
+  background-color: #006e3e;
+}
+
+.Result {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  padding: 2rem;
+  background-color: white;
+  margin: 1rem 0;
+}
+
+.ModalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+}
+
+.Modal {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 1000;
+  width: max(320px, 30vw);
+  min-height: 70vh;
+
+  > h2 {
+    margin: 0;
+  }
+}
+
+.Help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  flex: auto;
+  font-size: 16px;
+}
+
+.Stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.Stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > p {
+    font-size: 16px;
+    width: min-content;
+    margin: 0;
+  }
+
+  > p:first-child {
+    font-size: 32px;
+    font-weight: 600;
+  }
+}
+
+.Graph {
+  display: grid;
+  grid-template-columns: 50px 200px;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.GraphBar {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 6px;
+  font-size: 16px;
+  color: white;
+  background-color: #375ea9;
+  border-radius: 4px;
+}
