@@ -75,8 +75,8 @@ const App = () => {
               autofocus={true}
               value={guess()}
               onInput={e => {
-                if (e.target.value.match(/^\d*(\.\d{0,2})?$/)) {
-                  setGuess(e.target.value)
+                if (e.target.value.match(/^\d*((\.|\,)\d{0,2})?$/)) {
+                  setGuess(e.target.value.replace(',', '.'))
                 } else {
                   e.target.value = guess()
                 }
